@@ -1,0 +1,26 @@
+/* style.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.animated-image {
+    width: 200px; /* Adjust the reduced size as needed */
+    margin: 80px;
+    animation: slideAnimation 2s infinite alternate; /* Keep the slide animation */
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    50% {
+        transform: translateX(20px); /* Adjust the distance of animation */
+    }
+    100% {
+        transform: translateX(0); /* Return to the original position */
+    }
+}
